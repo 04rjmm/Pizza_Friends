@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="pizzashop.css">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+  <head>
+    <title>Book</title>
+  </head>
+  <body>
+    <header id="header">
+      <img class="logo" id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXbwTCnu0PLuJuWYwIJ50pc8etn79sKPP8dcBXu3dbWstMLO7z" alt="Company Logo">
+      <div class="row">
+      <h1 class="company">Pizza Friends</h1>
+      <nav id="nav-bar">
+	    <a class="nav-link" href="pizzashop_land.html">Home</a>
+        <a class="nav-link" href="pizzashop_about.html">About Us</a>
+        <a class="nav-link" href="pizzashop_menu.html">Menu</a>
+        <a class="nav-link" href="pizzashop_book.html">Book</a>
+        <a class="nav-link" href="pizzashop_contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <br>	
+	<div class="bookings">
+	<h3 class="book_title">Bookings</h3>
+      <p class="book">If you would like to book a table please fill out the below form</p>
+      <form id="form" action="pizzashop_thanks.html" method="post">
+        <label for="name" class="label">Name:</label>
+        <input type="text" class="input" id="name" placeholder="Name" name="name" required>
+        <label for="email" class="label">Email:</label>
+        <input type="email" class="input" id="email" placeholder="Email Address" name="email" required>
+        <label for="date" class="label">Date you wish to book for:</label>
+        <input type="date" class="input" name="date" id="book_date" required> 
+        <label for="time" class="label">Time you wish to book for:</label>
+        <select type="dropdown" name="time" class="input" id="time" required>
+          <option id="time" value="12">12:00</option>
+          <option id="time" value="13">13:00</option>
+          <option id="time" value="14">14:00</option>
+          <option id="time" value="15">15:00</option>
+          <option id="time" value="16">16:00</option>
+          <option id="time" value="17">17:00</option>
+          <option id="time" value="18">18:00</option>
+          <option id="time" value="19">19:00</option>
+          <option id="time" value="20">20:00</option>
+          <option id="time" value="21">21:00</option>
+        </select>
+		<br>
+		<div class="subbutton">
+          <input type="submit" id="submit" value="Book!" >
+        </div>
+	  </form>
+	  </div>
+</body>
+  <script src="pizzashop_book.js"></script>
+  <script src="pizzashop_menu.js"></script>
+</html>
